@@ -1,0 +1,12 @@
+name: release-radar-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Smoke check
+        run: echo "release-radar smoke check"
